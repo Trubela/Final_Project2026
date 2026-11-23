@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Green Fredericton — ask a question or get your sustainable business listed.">
+  <title>Green Fredericton | Contact</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="navbar is-success" role="navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <span class="has-text-weight-bold">🌿 Green Fredericton</span>
+        </a>
+        <a class="navbar-burger" href="#mainNav" title="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+      <div id="mainNav" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="index.html">Home</a>
+          <a class="navbar-item" href="shops.html">Shops</a>
+          <a class="navbar-item" href="about.html">About</a>
+          <a class="navbar-item is-active" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero is-success is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-2">Contact us</h1>
+          <p class="subtitle">Questions, suggestions, or want your shop listed? Send us a message.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+
+          <div class="column is-4-tablet is-3-desktop">
+            <aside class="sticky-side">
+              <div class="box">
+                <p class="menu-label">Get in touch</p>
+                <p><strong>Email</strong><br><a href="mailto:Pedrogarbelotti2008@gmail.com">Pedrogarbelotti2008@gmail.com</a></p>
+                <p class="mt-3"><strong>Location</strong><br>Fredericton, New Brunswick</p>
+                <p class="mt-3"><strong>Reply time</strong><br>Usually within 2 business days</p>
+              </div>
+              <div class="box has-background-success-light">
+                <p class="has-text-weight-bold">Want your shop listed?</p>
+                <p class="is-size-7">Choose "Add my business" in the form and tell us what makes your shop sustainable.</p>
+              </div>
+            </aside>
+          </div>
+
+
+          <div class="column">
+            <div class="box">
+              <h2 class="title is-4">Send a message</h2>
+
+              <div id="form-success" class="notification is-success" style="display: none;">
+                <button class="delete" title="Dismiss"></button>
+                Thanks, <span id="success-name"></span>! Your message was sent — we'll get back to you soon.
+              </div>
+
+              <form id="contact-form" method="post" action="#" onsubmit="return validateForm();">
+                <p class="is-size-7 has-text-grey mb-4">Fields marked * are required.</p>
+
+                <div class="columns is-multiline">
+
+                  <div class="column is-12-mobile is-6-tablet">
+                    <div class="field">
+                      <label class="label" for="userName">Name *</label>
+                      <div class="control">
+                        <input class="input" type="text" id="userName" name="userName"
+                               placeholder="Your name" required>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="column is-12-mobile is-6-tablet">
+                    <div class="field">
+                      <label class="label" for="userEmail">Email *</label>
+                      <div class="control">
+                        <input class="input" type="email" id="userEmail" name="userEmail"
+                               placeholder="you@example.com" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Topic -->
+                <div class="field">
+                  <label class="label" for="topic">What's this about?</label>
+                  <div class="control">
+                    <div class="select is-fullwidth">
+                      <select id="topic" name="topic">
+                        <option>General question</option>
+                        <option>Add my business</option>
+                        <option>Update a listing</option>
+                        <option>Feedback on the site</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <fieldset class="field">
+                  <legend class="label">I am a…</legend>
+                  <div class="control">
+                    <label class="radio mr-4"><input type="radio" name="visitor" value="local" checked> Local</label>
+                    <label class="radio mr-4"><input type="radio" name="visitor" value="student"> Student</label>
+                    <label class="radio mr-4"><input type="radio" name="visitor" value="visitor"> Visitor</label>
+                    <label class="radio"><input type="radio" name="visitor" value="business"> Business owner</label>
+                  </div>
+                </fieldset>
+
+                <div class="field">
+                  <label class="label" for="userMessage">Message *</label>
+                  <div class="control">
+                    <textarea class="textarea" id="userMessage" name="userMessage" rows="5"
+                              placeholder="Write your question here…" required></textarea>
+                  </div>
+                </div>
+
+
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox" for="consent">
+                      <input type="checkbox" id="consent" name="consent" required>
+                      I agree that Green Fredericton can reply to me by email. *
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button type="submit" class="button is-success">Send message</button>
+                  </div>
+                  <div class="control">
+                    <button type="reset" class="button is-light">Clear</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer has-background-success-dark has-text-white">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <p class="title is-5 has-text-white">🌿 Green Fredericton</p>
+          <p>A directory of sustainable local businesses in Fredericton, NB.</p>
+        </div>
+        <div class="column">
+          <p class="title is-6 has-text-white">Pages</p>
+          <ul>
+            <li><a class="has-text-white" href="index.html">Home</a></li>
+            <li><a class="has-text-white" href="shops.html">Shops</a></li>
+            <li><a class="has-text-white" href="about.html">About</a></li>
+            <li><a class="has-text-white" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <p class="title is-6 has-text-white">Contact</p>
+          <p>Fredericton, New Brunswick</p>
+          <p><a class="has-text-white" href="mailto:Pedrogarbelotti2008@gmail.com">Pedrogarbelotti2008@gmail.com</a></p>
+        </div>
+      </div>
+      <p class="has-text-centered is-size-7 mt-4">
+        &copy; 2026 Joseph Trubela &amp; Pedro Garbelotti &amp; Gustavo Quintal — Responsive Web Design project
+      </p>
+    </div>
+  </footer>
+
+  <a id="back-to-top" href="#top" class="button is-success is-rounded" title="Back to top of page">↑ Top</a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
